@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head>
+<title>pkg0.twn.FreeBSD.org</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="chrome-extension://jdnhpilgbiefbbmhohcjocfmmlnmjanc/fix.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<h1>FreeBSD.org pkg mirror</h1>
+<p>這是 <a href="http://pkg0.twn.freebsd.org">pkg0.twn.freebsd.org</a> - 亞洲區的 pkg(8) mirror 站。</p>
+<p>由位於台灣新竹的<a href="http://www.cs.nctu.edu.tw/">國立交通大學（National Chiao Tung University）</a>維護。</p>
+<p>請注意，<b>pkg(8) 使用 http 的方式並不同於您的瀏覽器。</b>
+而是依據 DNS 的 SRV 紀錄權重及優先權來查詢並處理。
+類似這樣：</p>
+<pre>% host -t srv _http._tcp.pkg.freebsd.org
+_http._tcp.pkg.freebsd.org has SRV record 10 10 80 pkg0.twn.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 20 10 80 pkg0.isc.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 20 10 80 pkg0.nyi.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 50 10 80 pkg0.bme.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 50 10 80 pkg0.ydx.freebsd.org.
+</pre>
+<p>有鑑於此，當離您最近的 mirror 站無法存取時，將會採用原生預設站台。</p>
+<p>我們使用基於 geo-dns 的 MaxMind GeoLite 資料庫來嘗試提供給您離您最近的 mirror 站。</p>
+<p><b>您正在瀏覽的這個 mirror 站<i>可能</i>是 pkg(8) 會採用的 mirror 站，但是我們沒有辦法保證。</b><br>
+由於 pkg(8) 1.1 及更早以前的版本並沒有實作優先權選擇，所以可能會選擇與這個 mirror 站不同的其他 mirror 站來使用。</p>
+<p><b>重要：我們<u>不保證</u>任何特定 mirror 站的服務時間。</b>而是提供無法連線時改用原生預設站台的機制來確保可用度。</p>
+<p>如果您設定您的 pkg 客戶端跳過 SRV 功能而使用直接的 http 存取特定 mirror 站，或者您處於防火牆後被限制使用 SRV 功能，您可能偶爾會遇到無法存取的狀況。</p>
+<p>如果您的主機或網路提供商的網路環境限制導致您無法使用標準的 DNS SRV 紀錄，我們鼓勵您使用這個方法來修正。</p><p>
+</p><p>本站的套件庫：</p>
+<ul>
+<li><a href="freebsd%3A8%3Ax86%3A32">freebsd:8:x86:32</a>
+</li><li><a href="freebsd%3A8%3Ax86%3A64">freebsd:8:x86:64</a>
+</li><li><a href="freebsd%3A9%3Ax86%3A32">freebsd:9:x86:32</a>
+</li><li><a href="freebsd%3A9%3Ax86%3A64">freebsd:9:x86:64</a>
+</li><li><a href="freebsd%3A10%3Ax86%3A32">freebsd:10:x86:32</a>
+</li><li><a href="freebsd%3A10%3Ax86%3A64">freebsd:10:x86:64</a>
+</li><li><a href="freebsd%3A11%3Ax86%3A32">freebsd:11:x86:32</a>
+</li><li><a href="freebsd%3A11%3Ax86%3A64">freebsd:11:x86:64</a>
+</li></ul>
+<p>其他的 mirrors 站：</p>
+<ul>
+<li><a href="http://pkg0.bme.freebsd.org/">pkg0.bme.freebsd.org</a>
+</li><li><a href="http://pkg0.isc.freebsd.org/">pkg0.isc.freebsd.org</a>
+</li><li><a href="http://pkg0.nyi.freebsd.org/">pkg0.nyi.freebsd.org</a>
+</li><li><a href="http://pkg0.ydx.freebsd.org/">pkg0.ydx.freebsd.org</a>
+</li></ul>
+<p><a href="http://www.FreeBSD.org/">FreeBSD.org home</a></p>
+
+</body></html>
