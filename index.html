@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pkg0.twn.FreeBSD.org</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1>FreeBSD.org pkg mirror</h1>
+<p>This is <a href="http://pkg0.twn.freebsd.org">pkg0.twn.freebsd.org</a> - an Asia regional mirror for pkg(8).</p>
+<p>It is generously hosted by <a href="http://www.cs.nctu.edu.tw/">National Chiao Tung University</a> in Hsinchu, TW.</p>
+<p>Beware, <b>pkg(8) does not use http like your browser does.</b>
+It does a DNS SRV record lookup and then processes the results
+according to weight and priority.  It looks something like this:</p>
+<pre>
+% host -t srv _http._tcp.pkg.freebsd.org
+_http._tcp.pkg.freebsd.org has SRV record 10 10 80 pkg0.twn.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 20 10 80 pkg0.isc.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 20 10 80 pkg0.nyi.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 50 10 80 pkg0.bme.freebsd.org.
+_http._tcp.pkg.freebsd.org has SRV record 50 10 80 pkg0.ydx.freebsd.org.
+</pre>
+<p>With this, it uses fallbacks in case the closest mirror is unavailable.</p>
+<p>We use MaxMind GeoLite based geo-dns to attempt to bias towards the closest mirror for you.</p>
+<p><b>The mirror your browser is viewing is <i>PROBABLY</i> the same one that pkg(8) would select but this is not guaranteed.</b><br>
+pkg(8) versions 1.1 and earlier do not implement priority selection so it is likey they will use a different mirror than this one.</p>
+<p><b>IMPORTANT: We do <u>NOT</u> guarantee uptime of any particular mirror.</b>  We provide SRV fallbacks for redundancy.</p>
+<p>If you configure your pkg client to use direct http access to a particular mirror and bypass the SRV fallback mechanism -
+or are behind a firewall that breaks DNS SRV records - you might experience occasional outages that do not affect
+clients that do use SRV records.</p>
+<p>If your provider or gateway prevents you from using standard DNS SRV records, we encourage you to try to have this fixed.<p>
+<p>This server's package sets:</p>
+<ul>
+<li><a href="freebsd%3A8%3Ax86%3A32">freebsd:8:x86:32</a>
+<li><a href="freebsd%3A8%3Ax86%3A64">freebsd:8:x86:64</a>
+<li><a href="freebsd%3A9%3Ax86%3A32">freebsd:9:x86:32</a>
+<li><a href="freebsd%3A9%3Ax86%3A64">freebsd:9:x86:64</a>
+<li><a href="freebsd%3A10%3Ax86%3A32">freebsd:10:x86:32</a>
+<li><a href="freebsd%3A10%3Ax86%3A64">freebsd:10:x86:64</a>
+<li><a href="freebsd%3A11%3Ax86%3A32">freebsd:11:x86:32</a>
+<li><a href="freebsd%3A11%3Ax86%3A64">freebsd:11:x86:64</a>
+</ul>
+<p>Other mirrors:</p>
+<ul>
+<li><a href="http://pkg0.bme.freebsd.org/">pkg0.bme.freebsd.org</a>
+<li><a href="http://pkg0.isc.freebsd.org/">pkg0.isc.freebsd.org</a>
+<li><a href="http://pkg0.nyi.freebsd.org/">pkg0.nyi.freebsd.org</a>
+<li><a href="http://pkg0.ydx.freebsd.org/">pkg0.ydx.freebsd.org</a>
+</ul>
+<p><a href="http://www.FreeBSD.org/">FreeBSD.org home</a></p>
+</body></html>
