@@ -13,32 +13,41 @@
 <p><b>重要：我們任<u>不保證</u> 何特定鏡像站的運作時間 (uptime)。</b>而是以 SRV 記錄中的備選站台來確保可用度。</p>
 <p>本伺服器的套件集：</p>
 <ul>
-<li><a href="freebsd%3A8%3Ax86%3A32">freebsd:8:x86:32</a>
-<li><a href="freebsd%3A8%3Ax86%3A64">freebsd:8:x86:64</a>
-<li><a href="freebsd%3A9%3Ax86%3A32">freebsd:9:x86:32</a>
-<li><a href="freebsd%3A9%3Ax86%3A64">freebsd:9:x86:64</a>
-<li><a href="freebsd%3A10%3Ax86%3A32">freebsd:10:x86:32</a>
-<li><a href="freebsd%3A10%3Ax86%3A64">freebsd:10:x86:64</a>
-<li><a href="freebsd%3A11%3Ax86%3A32">freebsd:11:x86:32</a>
-<li><a href="freebsd%3A11%3Ax86%3A64">freebsd:11:x86:64</a>
-<li><a href="freebsd%3A11%3Aaarch64%3A64">freebsd:11:aarch64:64</a>
-<li><a href="freebsd%3A12%3Ax86%3A32">freebsd:12:x86:32</a>
-<li><a href="freebsd%3A12%3Ax86%3A64">freebsd:12:x86:64</a>
+<li><a href="FreeBSD%3A8%3Ai386">FreeBSD:8:i386 (不再更新)</a>
+<li><a href="FreeBSD%3A8%3Aamd64">FreeBSD:8:amd64 (不再更新)</a>
+<li><a href="FreeBSD%3A9%3Ai386">FreeBSD:9:i386</a>
+<li><a href="FreeBSD%3A9%3Aamd64">FreeBSD:9:amd64</a>
+<li><a href="FreeBSD%3A10%3Ai386">FreeBSD:10:i386</a>
+<li><a href="FreeBSD%3A10%3Aamd64">FreeBSD:10:amd64</a>
+<li><a href="FreeBSD%3A11%3Ai386">FreeBSD:11:i386</a>
+<li><a href="FreeBSD%3A11%3Aamd64">FreeBSD:11:amd64</a>
+<li><a href="FreeBSD%3A11%3Aaarch64">FreeBSD:11:aarch64</a>
+<li><a href="FreeBSD%3A12%3Ai386">FreeBSD:12:i386</a>
+<li><a href="FreeBSD%3A12%3Aamd64">FreeBSD:12:amd64</a>
 </ul>
 <p>第二級支援套件集：</p>
 <ul>
-<li><a href="freebsd%3A11%3Aarmv6%3A32%3Ael%3Aeabi%3Asoftfp">freebsd:11:armv6:32:el:eabi:softfp</a>
-<li><a href="freebsd%3A11%3Amips%3A32%3Aeb%3Ao32">freebsd:11:mips:32:eb:o32</a>
-<li><a href="freebsd%3A11%3Amips%3A64%3Aeb%3An64">freebsd:11:mips:64:eb:n64</a>
-<li><a href="freebsd%3A12%3Aarmv6%3A32%3Ael%3Aeabi%3Asoftfp">freebsd:12:armv6:32:el:eabi:softfp</a>
-<li><a href="freebsd%3A12%3Amips%3A32%3Aeb%3Ao32">freebsd:12:mips:32:eb:o32</a>
-<li><a href="freebsd%3A12%3Amips%3A64%3Aeb%3An64">freebsd:12:mips:64:eb:n64</a>
+<li><a href="FreeBSD%3A11%3Aarmv6">FreeBSD:11:armv6</a>
+<li><a href="FreeBSD%3A11%3Amips">FreeBSD:11:mips</a>
+<li><a href="FreeBSD%3A11%3Amips64">FreeBSD:11:mips64</a>
+<li><a href="FreeBSD%3A12%3Aarmv6">FreeBSD:12:armv6</a>
+<li><a href="FreeBSD%3A12%3Amips">FreeBSD:12:mips</a>
+<li><a href="FreeBSD%3A12%3Amips64">FreeBSD:12:mips64</a>
 </ul>
 <p>其他的鏡像站：</p>
 <ul>
 <li><a href="http://pkg0.bme.freebsd.org/">pkg0.bme.freebsd.org</a>
+<li><a href="http://pkg0.isc.freebsd.org/">pkg0.isc.freebsd.org</a>
 <li><a href="http://pkg0.nyi.freebsd.org/">pkg0.nyi.freebsd.org</a>
 <li><a href="http://pkg0.ydx.freebsd.org/">pkg0.ydx.freebsd.org</a>
 </ul>
+<p><b>Note:</b>
+  Packages for -current on <b>aarch64</b> are not yet being built.
+  The workaround is to use the FreeBSD-11 packages via the following
+  trick:</p> <p>&nbsp;&nbsp;<code>env ABI=freebsd:11:aarch64:64 pkg
+    bootstrap</code></p> <p><a
+    href="http://www.raspbsd.org/raspberrypi.html">This page</a> has
+  more information.</p>
+
 <p><a href="https://www.FreeBSD.org/">FreeBSD.org 首頁</a></p>
 </body></html>
